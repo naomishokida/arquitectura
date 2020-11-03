@@ -1,0 +1,2120 @@
+/*----------INICIO HEADER----------*/
+
+header {
+    position: fixed;
+	width: 960px;
+	height: 50px;
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+body {
+    position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/*----------INICIO LOGO Y MENÚ----------*/
+
+#logo img {
+    width: 200px;
+    height: 50px;
+    float: left;
+    margin-left: 0px;
+}
+
+#main_menu {
+	width: 500px;
+	height: 50px;
+	float: right;
+}
+
+.main_menu {
+	padding: 0px;
+    margin-top: 10px;
+	margin-bottom: 10px;
+	list-style-type: none;
+}
+
+.menu_item li {
+	display: inline;
+    list-style: none;
+}
+
+.menu_item li a {
+	display: inline-block;
+	text-decoration: none;
+	width: 100px;
+	height: 30px;
+	margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-sizing: border-box;
+	color: #070005;
+	text-align: center;
+    font-size: 24px;
+    /*font-family: sans-serif;*/
+    font-family: 'Amatic SC', cursive;
+}
+
+.menu_item li a:hover {
+    color: #D5D8DC;
+}
+
+.menu_item li a.active {
+    color: #D5D8DC;
+}
+
+    .page {
+      height: 100%;
+      width: 100%;
+    }
+
+
+/*----------FIN LOGO Y MENÚ----------*/
+
+/*----------FIN HEADER----------*/
+
+
+
+
+/*----------INICIO BODY----------*/
+
+/*----------INICIO SECTION----------*/
+
+section {
+    width: 960px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+/*----------INICIO HOME----------*/
+
+#home {
+    width: 960px;
+    height: 700px;
+    padding-top: 20px;
+}
+
+/*---------- INICIO TÍTULOS y SUBTITULOS ----------*/
+
+#titulos {
+    width: 960px;
+    height: 40px;
+    font-size: 40px;
+    font-weight: 100;
+    /*font-family: sans-serif;*/
+    font-family: 'Amatic SC', cursive;
+    /*text-decoration: underline;*/
+    margin-top: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#subtitulos {
+    width: 960px;
+    height: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/*---------- FIN TÍTULOS y SUBTITULOS ----------*/
+
+
+/*----------INICIO PHOTOS----------*/
+
+#section_photos {
+    width: 960px;
+    height: 550px;
+    padding-top: 50px;
+}
+
+#photos {
+    width: 240px;
+    height: 500px;
+    float: left;
+}
+
+/*----------FIN PHOTOS----------*/
+
+
+/*----------INICIO TYPED----------*/
+
+#typewriter {
+    width: 960px;
+    height: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-left: 350px;
+    color:black;
+    text-decoration: none;
+    font-family: 'Homemade Apple', cursive;
+}
+
+/*----------FIN TYPED----------*/
+
+/*----------FIN HOME----------*/
+
+
+/*----------INICIO PORTFOLIO----------*/
+
+#portfolio {
+    width: 960px;
+    height: 1200px;
+    position: relative;
+    padding-top: 20px;
+}
+
+.proyecto {
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin-left: 12px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.overlay  {
+    position: absolute;
+    top: 70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.proyecto:hover .overlay {
+    opacity: 0.7;
+}
+
+.text {
+    color:white;
+    opacity: 1;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*---------------INICIO SLIDER CSS para PORTFOLIO--------------*/
+
+@import "compass/css3";
+
+html,body {margin:0; padding:10px; -webkit-backface-visibility:hidden;}
+
+.bottom-text {
+  margin-top: 40px;
+  border-top: 2px solid #e5e7e9;
+  a {
+    border-bottom: 1px solid #e5e7e9;
+  }
+  p {
+   max-width: 650px; 
+  }
+}
+
+.hidden {
+  overflow: hidden;
+  display: none;
+  visibility: hidden;
+}
+
+.btn-gallery img {
+  max-width: 300px;
+  height: auto;
+}
+
+/*---------------FIN SLIDER CSS para PORTFOLIO--------------*/
+
+/*----------FIN PORTFOLIO----------*/
+
+
+/*----------INICIO QUIEN SOY----------*/
+
+#about_me {
+    width: 960px;
+    height: 550px;
+    padding-top: 20px;
+}
+
+#presentacion {
+    width: 570px;
+    height: 360px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#imagen_quiensoy {
+    width: 200px;
+    height: 200px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.quiensoy_200x200 {
+    width: 200px;
+    height: 200px;
+    align-content: center;
+}
+
+#texto_quiensoyintro {
+    width: 370px;
+    height: 200px;
+    float: left;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+}
+
+#texto_quiensoy {
+    width: 560px;
+    height: 180px;
+    float: left;
+    margin-top: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+.texto_quiensoy {
+    margin-top: 5px;
+    font-family: sans-serif;
+    text-align: justify;
+    font-size: 15px;
+}
+
+#datos_personales {
+    width: 360px;
+    height: 480px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    float: right;
+    background-color: #D5D8DC;
+}
+
+#dato {
+    width: 320px;
+    height: 15px;
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom:15px;
+}
+
+#dato_icon {
+    width: 15px;
+    height: 15px;
+    float: left;
+    font-size: 15px;
+}
+
+#dato_text {
+    width: 290px;
+    height: 40px;
+    float: right;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+#educacion {
+    display: none;
+}
+
+#experiencialaboral {
+    display: none;
+}
+
+/*----------FIN QUIEN SOY ----------*/
+
+
+/*----------INICIO CONTACTO----------*/
+
+#seccion_contacto {
+    width: 960px;
+    height: 380px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+#contacto {
+    width: 480px;
+    height: 100px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contacto_icono {
+    width: 130px;
+    height: 60px;
+    text-align: right;
+    font-size: 60px;
+    float: left;
+}
+
+.contacto_iconolink {
+    text-decoration: none;
+    color: black;
+}
+
+.contacto_iconolink:hover {
+	color: #D5D8DC;
+}
+
+.contacto_texto {
+    width: 240px;
+    height: 60px;
+    float: right;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.contacto_aclaracion {
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+
+.contacto_link {
+    text-decoration: none;
+    color: black;
+}
+
+.contacto_link:hover {
+	color: #D5D8DC;
+}
+
+#formulario {
+    width: 700px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: deeppink;*/
+}
+
+#comentario {
+    width: 680px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+    border-color: #D1C4E9;
+}
+
+.submit {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #D5D8DC;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+    border:solid 1px #f7b7c7;
+    /*border-color: #f7b7c7;*/
+}
+
+textarea:focus { 
+    box-shadow:none !important;
+    border-color: red;
+    /*border:1px solid #f7b7c7;*/
+}
+
+
+
+/*----------INICIO FORMULARIO----------*/
+
+=====
+LEVEL 1. RESET STYLES
+=====
+*/
+
+.field{
+  --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+}
+
+.field__input{ 
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.field__input:focus::-webkit-input-placeholder{
+  color: var(--uiFieldPlaceholderColor);
+}
+
+.field__input:focus::-moz-placeholder{
+  color: var(--uiFieldPlaceholderColor);
+  opacity: 1;
+}
+
+/*
+=====
+LEVEL 2. CORE STYLES
+=====
+*/
+
+.a-field{
+  display: inline-block;
+}
+
+.a-field__input{ 
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.a-field__input:focus{
+  outline: none;
+}
+
+/*
+=====
+LEVEL 3. PRESENTATION STYLES
+=====
+*/
+
+/* a-field */
+
+.a-field{
+  --uiFieldHeight: var(--fieldHeight, 40px);  
+  --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+  --uiFieldBorderColor: var(--fieldBorderColor);
+
+  --uiFieldFontSize: var(--fieldFontSize, 1em);
+  --uiFieldHintFontSize: var(--fieldHintFontSize, 1em);
+
+  --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
+  --uiFieldPaddingBottom: var(--fieldPaddingBottom, 15px);
+  --uiFieldPaddingLeft: var(--fieldPaddingLeft, 15px);   
+
+  position: relative;
+  box-sizing: border-box;
+  font-size: var(--uiFieldFontSize);
+  padding-top: 1em;  
+}
+
+.a-field .a-field__input{
+  height: var(--uiFieldHeight);
+  padding: 0 var(--uiFieldPaddingRight) 0 var(--uiFieldPaddingLeft);
+  border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColor);  
+}
+
+.a-field .a-field__input::-webkit-input-placeholder{
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.a-field .a-field__input::-moz-placeholder{
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.a-field .a-field__input:not(:placeholder-shown) ~ .a-field__label-wrap .a-field__label{
+  opacity: 0;
+  bottom: var(--uiFieldPaddingBottom);
+}
+
+.a-field .a-field__input:focus::-webkit-input-placeholder{
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.a-field .a-field__input:focus::-moz-placeholder{
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.a-field .a-field__label-wrap{
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--uiFieldHeight); 
+
+  pointer-events: none;
+  cursor: text;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.a-field .a-field__label{
+  position: absolute;
+  left: var(--uiFieldPaddingLeft);
+  bottom: calc(50% - .5em);
+
+  line-height: 1;
+  font-size: var(--uiFieldHintFontSize);
+
+  pointer-events: none;
+  transition: bottom .2s cubic-bezier(0.9,-0.15, 0.1, 1.15), opacity .2s ease-out;
+  will-change: bottom, opacity;
+}
+
+.a-field .a-field__input:focus ~ .a-field__label-wrap .a-field__label{
+  opacity: 1;
+  bottom: var(--uiFieldHeight);
+}
+
+/* a-field_a1 */
+
+.a-field_a1 .a-field__input{
+  transition: border-color .2s ease-out;
+  will-change: border-color;
+}
+
+.a-field_a1 .a-field__input:focus{
+  border-color: var(--fieldBorderColorActive);
+}
+
+/* a-field_a2 */
+
+.a-field_a2 .a-field__label-wrap:after{
+  content: "";
+  box-sizing: border-box;
+  width: 0;
+  height: var(--uiFieldBorderWidth);
+  background-color: var(--fieldBorderColorActive);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;  
+
+  will-change: width;
+  transition: width .285s ease-out;
+}
+
+.a-field_a2 .a-field__input:focus ~ .a-field__label-wrap:after{
+  width: 100%;
+}
+
+/* a-field_a3 */
+
+.a-field_a3{
+  padding-top: 1.5em;
+}
+
+.a-field_a3 .a-field__label-wrap:after{
+  content: "";
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+
+  opacity: 0;
+  border: var(--uiFieldBorderWidth) solid var(--fieldBorderColorActive);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  will-change: opacity, height;
+  transition: height .2s ease-out, opacity .2s ease-out;
+}
+
+.a-field_a3 .a-field__input:focus ~ .a-field__label-wrap:after{
+  height: 100%;
+  opacity: 1;
+}
+
+.a-field_a3 .a-field__input:focus ~ .a-field__label-wrap .a-field__label{
+  bottom: calc(var(--uiFieldHeight) + .5em);
+}
+
+/*
+=====
+LEVEL 4. SETTINGS
+=====
+*/
+
+.field{
+  --fieldBorderColor: #D5D8DC;
+  --fieldBorderColorActive: #f7b7c7;
+}
+
+/*----------FIN FORMULARIO----------*/
+
+
+
+
+
+/*----------FIN CONTACTO----------*/
+
+
+/*----------FIN SECTION----------*/
+
+
+/*----------INICIO FOOTER----------*/
+
+footer {
+    width: 960px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#redes_sociales {
+    width: 960px;
+	height: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+    text-align: center;
+}
+
+.botonera_redes {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.botonera_redes li {
+	display: inline;
+	width: 960px;
+}
+
+.botonera_redes li a {
+	display: inline-block;
+	text-decoration: none;
+	width: 25px;
+	height: 20px;
+	margin-right: 5px;
+    margin-left: 5px;
+	color: #070005;   
+    font-size: 20px;
+}
+
+.botonera_redes li a:hover {
+	color: #D5D8DC;
+}
+
+#copyright {
+	width: 960px;
+	height: 15px;
+	margin-right: auto;
+	margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.desarrollador {	
+    font-family: sans-serif;
+	margin-top: 5px;
+	text-align: center;
+    font-size: 11px;
+}
+
+.icon-music {
+    font-size: 9px;
+}
+
+.icon-mug {
+    font-size: 9px;
+}
+
+.icon-heart {
+    font-size: 9px;
+}
+
+.naomi_shokida {
+    font-family: sans-serif;
+	text-decoration: none;
+	font-style: italic;
+	color: #070005;
+}
+
+.naomi_shokida a:hover {
+	color: #D5D8DC;
+}
+
+/*----------FIN FOOTER----------*/
+
+/*---------FIN BODY----------*/
+
+
+
+/*--------------------INICIO CSS para MEDIA 600 A 1013PX--------------------*/
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+
+/*----------INICIO HEADER----------*/
+
+header {
+	width: 580px;
+	height: auto;
+    padding-top: 40px;
+}
+
+/*----------INICIO LOGO Y MENÚ para MEDIA 600 A 1013PX----------*/
+
+    #logo {
+        text-align: center;
+    }
+    
+#logo img {
+    width: 200px;
+    height: 50px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#main_menu {
+	width: 580px;
+	height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+	float: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/*----------FIN LOGO Y MENÚ para MEDIA 600 A 1013PX----------*/
+
+/*----------FIN HEADER para MEDIA 600 A 1013PX----------*/
+
+
+/*----------INICIO BODY para MEDIA 600 A 1013PX----------*/
+
+/*----------INICIO SECTION para MEDIA 600 A 1013PX----------*/
+
+section {
+    width: 580px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+/*----------INICIO HOME para MEDIA 600 A 1013PX----------*/
+
+#home {
+    width: 580px;
+    height: 435px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+/*---------- INICIO TÍTULOS y SUBTITULOS para MEDIA 600 A 1013PX----------*/
+
+#titulos {
+    width: 580px;
+    height: 18px;
+    margin-top: 30px;
+}
+
+#subtitulos {
+    width: 580px;
+    height: 35px;
+}
+
+/*---------- FIN TÍTULOS y SUBTITULOS para MEDIA 600 A 1013PX----------*/
+
+
+/*----------INICIO PHOTOS para MEDIA 600 A 1013PX----------*/
+
+#section_photos {
+    width: 580px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+#photos {
+    width: 145px;
+    height: 350px;
+}
+
+    #photos img {
+        width: 145px;
+        height: 350px;  
+    }
+
+/*----------FIN PHOTOS para MEDIA 600 A 1013PX----------*/
+
+
+/*----------INICIO TYPED para MEDIA 600 A 1013PX----------*/
+
+#typewriter {
+    width: 580px;
+    height: 60px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-top: 3px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+/*----------FIN TYPED para MEDIA 600 A 1013PX----------*/
+
+/*----------FIN HOME para MEDIA 600 A 1013PX----------*/
+
+
+/*----------INICIO PORTFOLIO para MEDIA 600 A 1013PX----------*/
+
+#portfolio {
+    width: 580px;
+    height: 1300px;
+    padding-top: 80px;
+}
+
+.proyecto {
+    width: 260px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+    .proyecto img {
+        width: 260px;
+        height: 200px;
+    }
+
+
+/*---------------INICIO SLIDER CSS para PORTFOLIO para MEDIA 600 A 1013PX--------------*/
+
+/*---------------FIN SLIDER CSS para PORTFOLIO para MEDIA 600 A 1013PX--------------*/
+
+/*----------FIN PORTFOLIO para MEDIA 600 A 1013PX----------*/
+
+
+/*----------INICIO QUIEN SOY para MEDIA 600 A 1013PX----------*/
+
+#about_me {
+    width: 580px;
+    height: 780px;
+    padding-top: 80px;
+}
+
+#presentacion {
+    width: 580px;
+    height: 480px;
+    float: none;
+    margin-bottom: 10px;
+}
+
+#texto_quiensoyintro {
+    width: 360px;
+    height: 190px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#texto_quiensoy {
+    width: 560px;
+    height: 180px;
+    float: left;
+}
+
+.texto_quiensoy {
+    font-size: 14px;
+}
+
+#datos_personales {
+    width: 580px;
+    height: 200px;
+    margin-bottom: 20px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    float: none;
+    background-color: #D5D8DC;
+}
+
+#dato {
+    width: 285px;
+    height: 30px;
+    float: left;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+#dato_icon {
+    width: 20px;
+    height: 30px;
+    margin-top: 5px;
+    margin-right: 0px;
+}
+
+#dato_text {
+    width: 260px;
+    height: 30px;
+    float: right;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+    #educacion {
+        display: none;
+    }
+    
+    #experiencialaboral {
+        display: none;
+    }
+
+    
+/*----------FIN QUIEN SOY para MEDIA 600 A 1013PX----------*/
+
+
+/*----------INICIO CONTACTO para MEDIA 600 A 1013PX----------*/
+
+#seccion_contacto {
+    width: 580px;
+    height: 280px;
+    padding-top: 30px;
+}
+
+#contacto {
+    width: 275px;
+    height: 80px;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contacto_icono {
+    width: 50px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 0px;
+    text-align: right;
+    font-size: 30px;
+}
+
+.contacto_texto {
+    width: 200px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.contacto_aclaracion {
+    font-size: 13px;
+}
+
+#formulario {
+    width: 500px;
+    height: 350px;
+    margin-top: 20px;
+}
+
+#comentario {
+    width: 500px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+
+/*----------FIN CONTACTO para MEDIA 600 A 1013PX----------*/
+
+
+/*----------FIN SECTION para MEDIA 600 A 1013PX----------*/
+
+
+/*----------INICIO FOOTER para MEDIA 600 A 1013PX----------*/
+
+footer {
+    width: 580px;
+}
+
+#redes_sociales {
+    width: 580px;
+}
+
+.botonera_redes li {
+	width: 580px;
+}
+
+#copyright {
+	width: 580px;
+}
+
+/*----------FIN FOOTER para MEDIA 600 A 1013PX----------*/
+
+/*---------FIN BODY para MEDIA 600 A 1013PX----------*/
+
+}
+
+
+/*--------------------FIN CSS para MEDIA 600 A 1013PX--------------------*/
+
+
+
+
+/*--------------------INICIO CSS para MEDIA 450 A 599PX--------------------*/
+
+@media all and (min-width:450px) and (max-width:599px) {
+    
+/*----------INICIO HEADER para MEDIA 450 A 599PX----------*/
+
+header {
+    position: absolute;
+	width: 90%;
+	height: auto;
+    padding-top: 300px;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+body {
+    position: relative;
+}
+
+/*----------INICIO LOGO Y MENÚ para MEDIA 450 A 599PX----------*/
+
+    #logo {
+        width: 100%;
+        height: auto;
+        float: none;
+        text-align: center;
+    }
+    
+#logo img {
+    float: none;
+}
+
+#main_menu {
+	width: 100%;
+    height: 200px;
+	float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10em;
+}
+
+    .menu_item {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    list-style-type: none;
+}
+    
+.menu_item li {
+	display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+
+}
+
+.menu_item li a {
+	display: block;
+    font-size: 20px;
+	width: 100%;
+	height: 35px;
+	margin-left: auto;
+    margin-right: auto;
+	background-color: #EAECEE ;
+	color: #070005;
+	line-height: 1.25em;
+	border: 2px solid white;
+}
+
+/*----------FIN LOGO Y MENÚ para MEDIA 450 A 599PX----------*/
+
+/*----------FIN HEADER para MEDIA 450 A 599PX----------*/
+
+/*----------INICIO BODY para MEDIA 450 A 599PX----------*/
+
+/*----------INICIO SECTION para MEDIA 450 A 599PX----------*/
+
+section {
+    width: 90%;
+    height: auto;
+    padding-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/*----------INICIO HOME para MEDIA 450 A 599PX----------*/
+
+#home {
+    width: 100%;
+    height: auto;
+    float: none;
+    padding-top: 70px;
+    margin-top: 0px;
+}
+
+/*---------- INICIO TÍTULOS y SUBTITULOS para MEDIA 450 A 599PX----------*/
+
+#titulos {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+
+#subtitulos {
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+}
+
+/*---------- FIN TÍTULOS y SUBTITULOS para MEDIA 450 A 599PX----------*/
+
+
+/*----------INICIO PHOTOS para MEDIA 450 A 599PX----------*/
+
+        #home {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-top: 2em;
+    }
+    
+#section_photos {
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+}
+    
+#photos {
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-bottom: 1em;
+}
+    
+    #photos img {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+/*----------FIN PHOTOS para MEDIA 450 A 599PX----------*/
+
+
+/*----------INICIO TYPED para MEDIA 450 A 599PX----------*/
+
+#typewriter {
+    width: 100%;
+    height: auto;
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 3px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-left: 1em;
+}
+
+/*----------FIN TYPED para MEDIA 450 A 599PX----------*/
+
+/*----------FIN HOME para MEDIA 450 A 599PX----------*/
+
+
+/*----------INICIO PORTFOLIO para MEDIA 450 A 599PX----------*/
+
+#portfolio {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.proyecto {
+    width: 300px;
+    height: 250px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 1em;
+    position: relative;
+}
+
+    .proyecto img {
+        width: 300px;;
+        height: 250px;
+    }
+    
+.overlay  {
+    position: absolute;
+    top: 70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.proyecto:hover .overlay {
+    opacity: 0.7;
+}
+
+.text {
+    color:white;
+    opacity: 1;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*---------------INICIO SLIDER CSS para PORTFOLIO para MEDIA 450 A 599PX--------------*/
+
+@import "compass/css3";
+
+html,body {margin:0; padding:10px; -webkit-backface-visibility:hidden;}
+
+.bottom-text {
+  margin-top: 40px;
+  border-top: 2px solid #e5e7e9;
+  a {
+    border-bottom: 1px solid #e5e7e9;
+  }
+  p {
+   max-width: 650px; 
+  }
+}
+
+.hidden {
+  overflow: hidden;
+  display: none;
+  visibility: hidden;
+}
+
+.btn-gallery img {
+  max-width: 300px;
+  height: auto;
+}
+
+/*---------------FIN SLIDER CSS para PORTFOLIO para MEDIA 450 A 599PX--------------*/
+
+/*----------FIN PORTFOLIO para MEDIA 450 A 599PX----------*/
+
+
+/*----------INICIO QUIEN SOY para MEDIA 450 A 599PX----------*/
+
+#about_me {
+    width: 100%;
+    height: auto;
+    padding-top: 0.5em;
+}
+
+#presentacion {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-bottom: 20px;
+}
+
+#imagen_quiensoy {
+    width: 200px;
+    height: 200px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#texto_quiensoyintro {
+    width: 100%;
+    height: auto;
+    float: none;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    box-sizing: border-box;
+}
+
+#texto_quiensoy {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-top: 0px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.texto_quiensoy {
+    font-family: sans-serif;
+    text-align: justify;
+    font-size: 15px;
+}
+
+#datos_personales {
+    width: 100%;
+    height: 330px;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    box-sizing: border-box;
+    float: none;
+    background-color: #D5D8DC;
+}
+
+#dato {
+    width: 100%;
+    height: 15px;
+    float: left;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom:0.5em;
+}
+
+#dato_icon {
+    width: 10%;
+    float: left;
+}
+
+#dato_text {
+    width: 90%;
+    height: 40px;
+    float: right;
+}
+
+#educacion {
+    display: none;
+}
+
+#experiencialaboral {
+    display: none;
+}
+
+/*----------FIN QUIEN SOY para MEDIA 450 A 599PX----------*/
+
+
+/*----------INICIO CONTACTO para MEDIA 450 A 599PX----------*/
+
+#seccion_contacto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0,5em;
+}
+
+#contacto {
+    width: 100%;
+    height: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contacto_icono {
+    width: 30%;
+    height: auto;
+    text-align: right;
+    font-size: 50px;
+    float: left;
+}
+
+.contacto_texto {
+    width: 70%;
+    height: 60px;
+    float: right;
+    text-align: left;
+    padding-left: 1em;
+    padding-top: 0;
+    padding-bottom: 0px;
+        font-size: 14px;
+}
+
+
+#formulario {
+    width: 100%;
+    height: 420px;
+    float: left;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    width: 50%;
+    align-content: center;
+    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#comentario {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 100%;
+}
+
+/*----------FIN CONTACTO para MEDIA 450 A 599PX----------*/
+
+
+/*----------FIN SECTION para MEDIA 450 A 599PX----------*/
+
+
+/*----------INICIO FOOTER para MEDIA 450 A 599PX----------*/
+
+footer {
+    width: 90%;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+#redes_sociales {
+    width: 100%;
+	height: auto;
+	margin-bottom: 0.5em;
+}
+
+.botonera_redes li {
+	display: inline;
+	width: 90%;
+}
+
+.botonera_redes li a {
+	display: inline-block;
+	margin-right: 0.25em;
+    margin-left: 0.25em;
+	color: #070005;   
+}
+
+#copyright {
+	width: 100%;
+}
+
+/*----------FIN FOOTER para MEDIA 450 A 599PX----------*/
+
+/*---------FIN BODY para MEDIA 450 A 599PX----------*/
+    
+}
+
+/*--------------------FIN CSS para MEDIA 450 A 599PX--------------------*/
+
+
+
+/*--------------------INICIO CSS para MEDIA 449PX--------------------*/
+
+@media all and (max-width:449px) {
+    
+    
+/*----------INICIO HEADER para MEDIA 449PX----------*/
+
+header {
+    position: absolute;
+	width: 90%;
+	height: auto;
+    padding-top: 10em;
+    margin-top: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+    text-align: center;
+    margin-bottom: 0.5em;
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+body {
+    position: relative;
+    height: auto;
+}
+
+/*----------INICIO LOGO Y MENÚ para MEDIA 449PX----------*/
+    
+        #logo {
+        width: auto;
+        height: auto;
+        float: none;
+        text-align: center;
+        }
+
+#logo img {
+    float: none;
+}
+
+#main_menu {
+	width: 100%;
+	height: auto;
+	float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+    .menu_item {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu_item li {
+	display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+}
+
+.menu_item li a {
+	display: block;
+	width: 100%;
+	height: 35px;
+    font-size: 20px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    box-sizing: border-box;
+	background-color: #EAECEE ;
+	color: #070005;
+	line-height: 1.25em;
+	border: 2px solid white;
+}
+
+/*----------FIN LOGO Y MENÚ para MEDIA 449PX----------*/
+
+/*----------FIN HEADER para MEDIA 449PX----------*/
+
+
+
+
+/*----------INICIO BODY para MEDIA 449PX----------*/
+
+/*----------INICIO SECTION para MEDIA 449PX----------*/
+
+section {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+/*----------INICIO HOME para MEDIA 449PX----------*/
+
+#home {
+    width: 100%;
+    padding-top: 120px;
+    height: auto;
+    float: none;
+}
+
+/*---------- INICIO TÍTULOS y SUBTITULOS para MEDIA 449PX----------*/
+
+#titulos {
+    width: 100%;
+    height: auto;
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+#subtitulos {
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+}
+
+/*---------- FIN TÍTULOS y SUBTITULOS para MEDIA 449PX----------*/
+
+
+/*----------INICIO PHOTOS para MEDIA 449PX----------*/
+
+    #section_home {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-top: 2em;
+    }
+    
+#section_photos {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-top: 2em;
+}
+
+#photos {
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-bottom: 1em;
+}
+
+    #photos img {
+    width: 100%;
+    height: auto;
+    float: left;
+    }
+    
+/*----------FIN PHOTOS para MEDIA 449PX----------*/
+
+
+/*----------INICIO TYPED para MEDIA 449PX----------*/
+
+#typewriter {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 1.5em;
+}
+
+/*----------FIN TYPED para MEDIA 449PX----------*/
+
+/*----------FIN HOME para MEDIA 449PX----------*/
+
+
+/*----------INICIO PORTFOLIO para MEDIA 449PX----------*/
+
+#portfolio {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+}
+
+.proyecto {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 1em;
+    position: relative;
+}
+
+        .proyecto img {
+        width: 100%;
+        height: auto;
+    }
+    
+/*MAL- REVISAR*/
+.overlay  {
+    position: absolute;
+    top: 70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: none;
+}
+
+.proyecto:hover .overlay {
+    opacity: 0.7;
+}
+
+.text {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+/*---------------INICIO SLIDER CSS para PORTFOLIO para MEDIA 449PX--------------*/
+
+
+/*---------------FIN SLIDER CSS para PORTFOLIO para MEDIA 449PX--------------*/
+
+/*----------FIN PORTFOLIO para MEDIA 449PX----------*/
+
+
+/*----------INICIO QUIEN SOY para MEDIA 449PX----------*/
+
+#about_me {
+    width: 100%;
+    height: auto;
+    padding-top: 1em;
+}
+
+#presentacion {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-bottom: 1em;
+}
+
+#imagen_quiensoy {
+    width: 200px;
+    height: auto;
+    float: none;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+.quiensoy_200x200 {
+    align-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#texto_quiensoyintro {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-left: auto;
+    margin-right:auto;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#texto_quiensoy {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-top: 0px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0px;
+    padding-bottom: 0.5em;
+}
+
+.texto_quiensoy {
+    font-size: 12px;
+}
+
+#datos_personales {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    padding-top: 0.2em;
+    padding-bottom: 0em;
+    box-sizing: border-box;
+    float: left;
+    background-color: #D5D8DC;
+}
+
+#dato {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+    padding-left: 0.2em;
+    padding-right: 0,2em;
+    box-sizing: border-box;
+}
+
+#dato_icon {
+    width: 10%;
+    height: 1.5em;
+    float: left;
+    font-size: 15px;
+    text-align: center;
+}
+
+#dato_text {
+    width: 90%;
+    height: auto;
+    float: right;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+#educacion {
+    display: none;
+}
+
+#experiencialaboral {
+    display: none;
+}
+
+.subtitulo {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 200;
+}
+
+/*----------FIN QUIEN SOY para MEDIA 449PX ----------*/
+
+
+/*----------INICIO CONTACTO para MEDIA 449PX----------*/
+
+#seccion_contacto {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    margin-bottom: 1em;
+}
+
+#contacto {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    box-sizing: border-box;
+    margin-top: 0.5em;
+    margin-bottom:0.5em;
+}
+
+.contacto_icono {
+    width: 30%;
+    height: auto;
+    font-size: 40px;
+    float: left;
+    text-align: right;
+
+}
+
+.contacto_iconolink {
+    text-decoration: none;
+    color: black;
+}
+
+.contacto_iconolink:hover {
+	color: #D5D8DC;
+}
+
+.contacto_texto {
+    width: 70%;
+    height: auto;
+    float: right;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.contacto_aclaracion {
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+
+#formulario {
+    width: 100%;
+    height: 420px;
+    float: left;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    width: 55%;
+    align-content: center;
+    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#comentario {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 100%;
+}
+
+
+
+/*----------FIN CONTACTO para MEDIA 449PX----------*/
+
+
+/*----------FIN SECTION para MEDIA 449PX----------*/
+
+
+/*----------INICIO FOOTER para MEDIA 449PX----------*/
+
+footer {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+#redes_sociales {
+    width: 100%;
+	height: auto;
+	margin-bottom: 0px;
+}
+
+.botonera_redes {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.botonera_redes li {
+	display: inline;
+	width: 100%;
+}
+
+.botonera_redes li a {
+	display: inline-block;
+	text-decoration: none;
+	width: 1.2em;
+	height: auto;
+	margin-right: 0.25em;
+    margin-left: 0.25em;
+	color: #070005;   
+    font-size: 20px;
+}
+
+#copyright {
+	width: 100%;
+	height: auto;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.desarrollador {	
+    font-family: sans-serif;
+	margin-top: 0.5em;
+    font-size: 10px;
+}
+
+
+/*----------FIN FOOTER para MEDIA 449PX----------*/
+
+/*---------FIN BODY para MEDIA 449PX----------*/
+
+}
+
+
+/*--------------------FIN CSS para MEDIA 449PX--------------------*/
